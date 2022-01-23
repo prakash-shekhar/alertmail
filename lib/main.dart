@@ -64,7 +64,6 @@ class _AlertMailHomeState extends State<AlertMailHome> {
           )
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.purple,
         onTap: _onItemTapped,
       ),
     );
