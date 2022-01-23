@@ -20,6 +20,14 @@ class _AlertsViewState extends State<AlertsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Alert Mail"),
+        actions: [IconButton(onPressed: () {
+          setState(() {
+            alertList.clear();
+          });
+        }, icon: const Icon(Icons.delete_sweep))],
+      ),
       body: ListView.builder(
         itemCount: alertList.length,
         itemBuilder: (context, index){

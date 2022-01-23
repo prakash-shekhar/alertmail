@@ -18,6 +18,7 @@ class AlertMail extends StatelessWidget {
       ),
       themeMode: ThemeMode.system,
       home: const AlertMailHome(title: 'Alert Mail'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -40,7 +41,6 @@ class _AlertMailHomeState extends State<AlertMailHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Alert Mail"),),
       body: IndexedStack(
         children: const <Widget>[
           AlertsView(),
