@@ -16,6 +16,7 @@ class AlertMail extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      themeMode: ThemeMode.system,
       home: const AlertMailHome(title: 'Alert Mail'),
     );
   }
